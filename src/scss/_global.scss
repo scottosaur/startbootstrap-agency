@@ -25,6 +25,14 @@ p {
 
 // Spacing and heading styling for page sections
 
+#details {
+    padding: 0;
+}
+
+#greeting {
+    margin-top: 6rem;
+}
+
 .page-section {
     padding: 6rem 0;
 
@@ -47,6 +55,10 @@ p {
 // than the medium breakpoint (set by Bootstrap)
 
 @include media-breakpoint-up(md) {
+    .extra-margin {
+        margin-top: 5rem;
+    }
+
     section {
         padding: 9rem 0;
     }

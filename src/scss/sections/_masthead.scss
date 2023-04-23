@@ -13,6 +13,10 @@ header.masthead {
     background-position: center center;
     background-size: cover;
 
+    &.masthead-rsvp {
+        background-image: url("../assets/img/rsvp-img.jpg");
+    }
+
     .masthead-subheading {
         font-size: 1.5rem;
         font-style: italic;
@@ -27,6 +31,11 @@ header.masthead {
         line-height: 3.25rem;
         margin-bottom: 2rem;
         font-family: $headings-font-family;
+    }
+
+    .masthead-pad-top {
+        padding-top: 18rem;
+        // padding-bottom: 0rem;
     }
 }
 

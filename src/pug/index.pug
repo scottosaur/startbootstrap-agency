@@ -28,7 +28,7 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
-                a.navbar-brand(href='#page-top')
+                a.navbar-brand(href='index.html#page-top')
                     img(src='assets/img/navbar-logo.svg', alt='...')
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
@@ -36,380 +36,146 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
                         li.nav-item
-                            a.nav-link(href='#details') Details
+                            a.nav-link(href='our-story.html') Our Story
                         li.nav-item
-                            a.nav-link(href='#location') Location
-                        //- li.nav-item
-                        //-     a.nav-link(href='#about') About
-                        //- li.nav-item
-                        //-     a.nav-link(href='#team') Team
+                            a.nav-link(href='location.html') Location
                         li.nav-item
-                            a.nav-link(href='#contact') Contact
+                            a.nav-link(href='timeline.html') Timeline
+                        li.nav-item
+                            a.nav-link(href='q+a.html') Q + A
+                        li.nav-item
+                            a.nav-link(href='rsvp.html') RSVP
+                        
         // Masthead
         header.masthead
             .container
-                .masthead-subheading On May 24th, 2023
+                .masthead-subheading On June 24th, 2023
                 .masthead-heading.text-uppercase Let's Get Married!
                 //- a.btn.btn-primary.btn-xl.text-uppercase(href='#details') Tell Me More
+
+        // Greeting
+        #greeting.container
+            .row
+                .col
+                .col-8.text-center
+                    p.lead Thank you for being such a special part of our lives as we take time to celebrate our love. We are so excited for you to be a part of our wedding day. 
+                .col
 
         // Details
         section#details.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Details
+                    h2.section-heading.text-uppercase   
                     h3.section-subheading.text-muted  
                     //- h3.section-subheading.text-muted Here's what to expect on the big day.
                 .row.text-center
                     .col-md-4
-                        span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-user-tie.fa-stack-1x.fa-inverse
-                        h4.my-3 Dress
-                        p.text-muted
-                            | We kindly suggest that you dress for a "cruise to cocktail" atmosphere. We want our guests to feel elegant but comfortable, keeping in mind we will be outdoors in early summer.
+                        a.span.fa-stack.fa-4x(href='location.html')
+                            i.fas.fa-square.fa-stack-2x.text-primary
+                            i.fas.fa-map-location-dot.fa-stack-1x.fa-inverse
+                        h4.my-3 Location
                     .col-md-4
-                        span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-utensils.fa-stack-1x.fa-inverse
-                        h4.my-3 Dining
-                        p.text-muted
-                            | We will be serving a light meal of small plates inspired by our Chicago favorites followed by cake. Wine, beer, cider, and cocktails will be provided to toast our future together.
+                        a.span.fa-stack.fa-4x(href='q+a.html')
+                            i.fas.fa-square.fa-stack-2x.text-primary
+                            i.fas.fa-question.fa-stack-1x.fa-inverse
+                        h4.my-3 Q+A
                     .col-md-4
-                        span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-hotel.fa-stack-1x.fa-inverse
-                        h4.my-3 Accomodations
-                        p.text-muted
-                            | We do not have specific hotel reservations. There are numerous excellent options both near the river as well as throughout the city, and we would be happy to make suggestions if needed.
+                        a.span.fa-stack.fa-4x(href='RSVP.html')
+                            i.fas.fa-square.fa-stack-2x.text-primary
+                            i.fas.fa-envelope.fa-stack-1x.fa-inverse
+                        h4.my-3 RSVP
 
-
-        // Location
-        section#portfolio.page-section.bg-light
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Portfolio
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                .row
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 1
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal1')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/1.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Threads
-                                .portfolio-caption-subheading.text-muted Illustration
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 2
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal2')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/2.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Explore
-                                .portfolio-caption-subheading.text-muted Graphic Design
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 3
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal3')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/3.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Finish
-                                .portfolio-caption-subheading.text-muted Identity
-                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
-                        // Portfolio item 4
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal4')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/4.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Lines
-                                .portfolio-caption-subheading.text-muted Branding
-                    .col-lg-4.col-sm-6.mb-4.mb-sm-0
-                        // Portfolio item 5
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal5')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/5.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Southwest
-                                .portfolio-caption-subheading.text-muted Website Design
-                    .col-lg-4.col-sm-6
-                        // Portfolio item 6
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal6')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/6.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Window
-                                .portfolio-caption-subheading.text-muted Photography
-
-        // Timeline
-        section#location.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Wedding Timeline
-                    h3.section-subheading.text-muted  
-                    //- h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                ul.timeline
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 7:30 PM
-                                h4.subheading Boarding Begins
-                            .timeline-body
-                                p.text-muted
-                                    | We will be boarding Chicago's First Lady promptly at 7:30pm. The dock is located along the Chicago Riverwalk, just east of Michigan Avenue. More details for locating the boat are available here.
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 7:45 PM
-                                h4.subheading Cruise Departs
-                            .timeline-body
-                                p.text-muted
-                                    | Our cruise will take us along the river and out to Lake Michigan for gorgeous views of Chicago's architecture and skyline.
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/3.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 8:15 PM
-                                h4.subheading Ceremony
-                            .timeline-body
-                                p.text-muted
-                                    | Our wedding will be held on the upper deck of the boat at Wolf Point, the fork of the north and south branches of the Chicago river.
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 8:30 PM
-                                h4.subheading Dining & Celebration
-                            .timeline-body
-                                p.text-muted
-                                    | Following the ceremony, food will be served, music will be played, and we hope our guests will be able to enjoy both the company and the views.
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 10:00 PM
-                                h4.subheading Fireworks
-                            .timeline-body
-                                p.text-muted
-                                    | Our evening will close with a viewing of Chicago’s summer fireworks display from Navy Pier.
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 10:45 PM
-                                h4.subheading Cruise Returns
-                            //- .timeline-body
-                            //-     p.text-muted
-                            //-         | Following the ceremony, food will be served, music will be played, and we hope our guests will be able to enjoy both the company and the views.
-                    li.timeline-inverted
-                        .timeline-image
-                            h4
-                                | Be Part
-                                br
-                                | Of Our
-                                br
-                                | Story!
-
-        //- // Team
-        //- section#team.page-section.bg-light
+        //- // Contact
+        //- section#contact.page-section
         //-     .container
         //-         .text-center
-        //-             h2.section-heading.text-uppercase Our Amazing Team
+        //-             h2.section-heading.text-uppercase Contact Us
         //-             h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-        //-         .row
-        //-             .col-lg-4
-        //-                 .team-member
-        //-                     img.mx-auto.rounded-circle(src='assets/img/team/1.jpg', alt='...')
-        //-                     h4 Parveen Anand
-        //-                     p.text-muted Lead Designer
-        //-                     a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand Twitter Profile')
-        //-                         i.fab.fa-twitter
-        //-                     a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand Facebook Profile')
-        //-                         i.fab.fa-facebook-f
-        //-                     a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand LinkedIn Profile')
-        //-                         i.fab.fa-linkedin-in
-        //-             .col-lg-4
-        //-                 .team-member
-        //-                     img.mx-auto.rounded-circle(src='assets/img/team/2.jpg', alt='...')
-        //-                     h4 Diana Petersen
-        //-                     p.text-muted Lead Marketer
-        //-                     a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Diana Petersen Twitter Profile')
-        //-                         i.fab.fa-twitter
-        //-                     a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Diana Petersen Facebook Profile')
-        //-                         i.fab.fa-facebook-f
-        //-                     a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Diana Petersen LinkedIn Profile')
-        //-                         i.fab.fa-linkedin-in
-        //-             .col-lg-4
-        //-                 .team-member
-        //-                     img.mx-auto.rounded-circle(src='assets/img/team/3.jpg', alt='...')
-        //-                     h4 Larry Parker
-        //-                     p.text-muted Lead Developer
-        //-                     a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Larry Parker Twitter Profile')
-        //-                         i.fab.fa-twitter
-        //-                     a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Larry Parker Facebook Profile')
-        //-                         i.fab.fa-facebook-f
-        //-                     a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Larry Parker LinkedIn Profile')
-        //-                         i.fab.fa-linkedin-in
-        //-         .row
-        //-             .col-lg-8.mx-auto.text-center
-        //-                 p.large.text-muted
-        //-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
 
-        // Clients
-        //- div.py-5
-        //-     .container
-        //-         .row.align-items-center
-        //-             .col-md-3.col-sm-6.my-3
-        //-                 a(href='#!')
-        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/microsoft.svg', alt='...', aria-label='Microsoft Logo')
-        //-             .col-md-3.col-sm-6.my-3
-        //-                 a(href='#!')
-        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/google.svg', alt='...', aria-label='Google Logo')
-        //-             .col-md-3.col-sm-6.my-3
-        //-                 a(href='#!')
-        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/facebook.svg', alt='...', aria-label='Facebook Logo')
-        //-             .col-md-3.col-sm-6.my-3
-        //-                 a(href='#!')
-        //-                     img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ibm.svg', alt='...', aria-label='IBM Logo')
+        //-         // * * * * * * * * * * * * * * *
+        //-         // * * SB Forms Contact Form * *
+        //-         // * * * * * * * * * * * * * * *
 
-        // Contact
-        section#contact.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Contact Us
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+        //-         // This form is pre-integrated with SB Forms.
+        //-         // To make this form functional, sign up at
+        //-         // https://startbootstrap.com/solution/contact-forms
+        //-         // to get an API token!
 
-                // * * * * * * * * * * * * * * *
-                // * * SB Forms Contact Form * *
-                // * * * * * * * * * * * * * * *
+        //-         form#contactForm(data-sb-form-api-token='API_TOKEN')
+        //-             .row.align-items-stretch.mb-5
+        //-                 .col-md-6
+        //-                     .form-group
 
-                // This form is pre-integrated with SB Forms.
-                // To make this form functional, sign up at
-                // https://startbootstrap.com/solution/contact-forms
-                // to get an API token!
+        //-                         // Name input
+        //-                         input#name.form-control(
+        //-                             type='text',
+        //-                             placeholder='Your Name *',
+        //-                             data-sb-validations='required'
+        //-                         )
+        //-                         .invalid-feedback(data-sb-feedback='name:required')
+        //-                             | A name is required.
 
-                form#contactForm(data-sb-form-api-token='API_TOKEN')
-                    .row.align-items-stretch.mb-5
-                        .col-md-6
-                            .form-group
+        //-                     .form-group
 
-                                // Name input
-                                input#name.form-control(
-                                    type='text',
-                                    placeholder='Your Name *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='name:required')
-                                    | A name is required.
+        //-                         // Email address input
+        //-                         input#email.form-control(
+        //-                             type='email',
+        //-                             placeholder='Your Email *',
+        //-                             data-sb-validations='required,email'
+        //-                         )
+        //-                         .invalid-feedback(data-sb-feedback='email:required')
+        //-                             | An email is required.
+        //-                         .invalid-feedback(data-sb-feedback='email:email')
+        //-                             | Email is not valid.
 
-                            .form-group
+        //-                     .form-group.mb-md-0
 
-                                // Email address input
-                                input#email.form-control(
-                                    type='email',
-                                    placeholder='Your Email *',
-                                    data-sb-validations='required,email'
-                                )
-                                .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
-                                .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
+        //-                         // Phone number input
+        //-                         input#phone.form-control(
+        //-                             type='tel',
+        //-                             placeholder='Your Phone *',
+        //-                             data-sb-validations='required'
+        //-                         )
+        //-                         .invalid-feedback(data-sb-feedback='phone:required')
+        //-                             | A phone number is required.
 
-                            .form-group.mb-md-0
+        //-                 .col-md-6
+        //-                     .form-group.form-group-textarea.mb-md-0
 
-                                // Phone number input
-                                input#phone.form-control(
-                                    type='tel',
-                                    placeholder='Your Phone *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
+        //-                         // Message input
+        //-                         textarea#message.form-control(
+        //-                             placeholder='Your Message *',
+        //-                             data-sb-validations='required'
+        //-                         )
+        //-                         .invalid-feedback(data-sb-feedback='message:required')
+        //-                             | A message is required.
 
-                        .col-md-6
-                            .form-group.form-group-textarea.mb-md-0
+        //-             // Submit success message
+        //-             //
+        //-             // This is what your users will see when the form
+        //-             // has successfully submitted
 
-                                // Message input
-                                textarea#message.form-control(
-                                    placeholder='Your Message *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
+        //-             #submitSuccessMessage.d-none
+        //-                 .text-center.text-white.mb-3
+        //-                     .fw-bolder Form submission successful!
+        //-                     | To activate this form, sign up at
+        //-                     br
+        //-                     a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
 
-                    // Submit success message
-                    //
-                    // This is what your users will see when the form
-                    // has successfully submitted
+        //-             // Submit error message
+        //-             //
+        //-             // This is what your users will see when there is
+        //-             // an error submitting the form
 
-                    #submitSuccessMessage.d-none
-                        .text-center.text-white.mb-3
-                            .fw-bolder Form submission successful!
-                            | To activate this form, sign up at
-                            br
-                            a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+        //-             #submitErrorMessage.d-none
+        //-                 .text-center.text-danger.mb-3 Error sending message!
 
-                    // Submit error message
-                    //
-                    // This is what your users will see when there is
-                    // an error submitting the form
-
-                    #submitErrorMessage.d-none
-                        .text-center.text-danger.mb-3 Error sending message!
-
-                    // Submit Button
-                    .text-center
-                        button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Send Message
+        //-             // Submit Button
+        //-             .text-center
+        //-                 button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Send Message
 
         // Footer
-        footer.footer.py-4
-            .container
-                .row.align-items-center
-                    .col-lg-4.text-lg-start
-                        //- | Copyright &copy; Scott Foster 2023
-                    .col-lg-4.my-3.my-lg-0
-                        | &copy; Scott Foster 2023
-                        //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Twitter')
-                        //-     i.fab.fa-twitter
-                        //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Facebook')
-                        //-     i.fab.fa-facebook-f
-                        //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='LinkedIn')
-                        //-     i.fab.fa-linkedin-in
-                    .col-lg-4.text-lg-end
-                        //- a.link-dark.text-decoration-none.me-3(href='#!') Privacy Policy
-                        //- a.link-dark.text-decoration-none(href='#!') Terms of Use
-
-        // Portfolio Modals
-        include includes/portfolio-modal-1
-        include includes/portfolio-modal-2
-        include includes/portfolio-modal-3
-        include includes/portfolio-modal-4
-        include includes/portfolio-modal-5
-        include includes/portfolio-modal-6
+        include includes/footer
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')

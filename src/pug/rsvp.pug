@@ -1,0 +1,81 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Scott & Kestelle
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+            .container
+                a.navbar-brand(href='index.html#page-top')
+                    img(src='assets/img/navbar-logo.svg', alt='...')
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    | Menu
+                    i.fas.fa-bars.ms-1
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
+                        li.nav-item
+                            a.nav-link(href='our-story.html') Our Story
+                        li.nav-item
+                            a.nav-link(href='location.html') Location
+                        li.nav-item
+                            a.nav-link(href='timeline.html') Timeline
+                        li.nav-item
+                            a.nav-link(href='q+a.html') Q + A
+                        li.nav-item
+                            a.nav-link(href='rsvp.html').active RSVP
+        // Masthead
+        header.masthead.masthead-rsvp
+            .container
+                .masthead-subheading.masthead-pad-top See you there?
+                //- .masthead-heading.text-uppercase See you there?
+                a.button.btn.btn-xl.btn-primary(href='https://forms.gle/J4DY2KT5jxnT5Cxo7') RSVP
+                //- a.btn.btn-primary.btn-xl.text-uppercase(href='#details') Tell Me More
+
+        //- // Timeline
+        //- section#timeline.page-section
+        //-     .container.extra-margin
+        //-         .text-center
+        //-             h2.section-heading.text-uppercase RSVP
+        //-             h3.section-subheading.text-muted  
+        //-             //- h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+        //-             img.img-fluid(src='assets/img/rsvp-img.jpg', alt='...')
+        //-                 h2.rsvp-headline See you there?
+        //-                 a.button.btn.btn-xl.btn-primary(href='https://forms.gle/J4DY2KT5jxnT5Cxo7') RSVP
+                
+        // Footer
+        include includes/footer
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
+
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+        // * *                               SB Forms JS                               * *
+        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')

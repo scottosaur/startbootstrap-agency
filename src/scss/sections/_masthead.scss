@@ -23,23 +23,25 @@ header.masthead {
         line-height: 1.5rem;
         margin-bottom: 25px;
         font-family: $subheadings-font-family;
+        text-shadow: 0px 0px 10px black;
     }
 
     .masthead-heading {
         font-size: 3.25rem;
-        font-weight: 700;
+        font-weight: 400;
         line-height: 3.25rem;
         margin-bottom: 2rem;
-        font-family: "kandaniextrude";
+        font-family: "semplicitapro";
         color: white;
-        &:before {
-            content: "Lets Get Married!";
-            position: absolute;
-            font-family: "kandaniregular";
-            // top: 0;
-            // left: 0;
-            color: $magenta;
-        }
+        text-shadow: 0px 0px 10px black;
+        // &:before {
+        //     content: "Lets Get Married!";
+        //     position: absolute;
+        //     font-family: "kandaniregular";
+        //     // top: 0;
+        //     // left: 0;
+        //     color: $magenta;
+        // }
     }
 
     .masthead-pad-top {
@@ -62,7 +64,6 @@ header.masthead {
 
         .masthead-heading {
             font-size: 6rem;
-            font-weight: 700;
             line-height: 4.5rem;
             margin-bottom: 4rem;
         }

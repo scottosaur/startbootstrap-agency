@@ -1,0 +1,34 @@
+// 
+// Rainbow Divider
+// 
+
+.rainbow-divider{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: .5rem;
+}
+
+.rainbow-divider-yellow{
+    background-color: $rainbow-yellow;
+}
+
+.rainbow-divider-orange{
+    background-color: $rainbow-orange;
+}
+
+.rainbow-divider-red{
+    background-color: $rainbow-red;
+}
+
+.rainbow-divider-purple{
+    background-color: $rainbow-purple;
+}
+
+.rainbow-divider-blue{
+    background-color: $rainbow-blue;
+}
+
+.rainbow-divider-green{
+    background-color: $rainbow-green;
+}

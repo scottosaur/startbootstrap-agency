@@ -20,6 +20,9 @@ html(lang='en')
         link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
 
+        // Semplicita Adobe Font
+        link(href='https://use.typekit.net/vej3ppm.css', rel='stylesheet', type='text/css') 
+
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
@@ -29,12 +32,12 @@ html(lang='en')
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top.navbar-solid
             .container
                 a.navbar-brand(href='index.html#page-top')
-                    img(src='assets/img/navbar-logo.svg', alt='...')
+                    img(src='assets/img/navbar-logo.svg', alt='...').rounded
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars.ms-1
                 #navbarResponsive.collapse.navbar-collapse
-                    ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
+                    ul.navbar-nav.text-lowercase.ms-auto.py-4.py-lg-0
                         li.nav-item
                             a.nav-link(href='our-story.html') Our Story
                         li.nav-item
@@ -54,13 +57,12 @@ html(lang='en')
                 .row
                     .col
                     .col
-                        
                     .col
                 .row 
                     .col-md-4 
-                        img.img-fluid(src='assets/img/location-engagement.jpg', alt="...")
+                        img.img-fluid.rounded(src='assets/img/location-engagement.jpg', alt="...")
                     .col-12.col-md-8 
-                        iframe#map(src="https://snazzymaps.com/embed/484054")
+                        iframe#map.rounded(src="https://snazzymaps.com/embed/484054")
                     //- .col
             .container.padded
                 .row 

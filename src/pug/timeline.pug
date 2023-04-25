@@ -20,6 +20,9 @@ html(lang='en')
         link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
 
+        // Semplicita Adobe Font
+        link(href='https://use.typekit.net/vej3ppm.css', rel='stylesheet', type='text/css') 
+
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
@@ -34,7 +37,7 @@ html(lang='en')
                     | Menu
                     i.fas.fa-bars.ms-1
                 #navbarResponsive.collapse.navbar-collapse
-                    ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
+                    ul.navbar-nav.text-lowercase.ms-auto.py-4.py-lg-0
                         li.nav-item
                             a.nav-link(href='our-story.html') Our Story
                         li.nav-item
@@ -73,7 +76,7 @@ html(lang='en')
                                 h4.subheading Boarding Begins
                             .timeline-body
                                 p.text-muted
-                                    | We will be boarding Chicago's First Lady promptly at 7:30pm. The dock is located along the Chicago Riverwalk, just east of Michigan Avenue. More details for locating the boat are available here.
+                                    | We will be boarding Chicago's First Lady promptly at 7:30pm. The dock is located along the Chicago Riverwalk, just east of Michigan Avenue. More details for locating the boat are available #[a(href=href='https://www.cruisechicago.com/location') here].
                     li.timeline-inverted
                         .timeline-image
                             img.rounded-circle.img-fluid(src='assets/img/timeline-departs.jpg', alt='...')

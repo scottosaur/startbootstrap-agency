@@ -30,7 +30,16 @@ header.masthead {
         font-weight: 700;
         line-height: 3.25rem;
         margin-bottom: 2rem;
-        font-family: $headings-font-family;
+        font-family: "kandaniextrude";
+        color: white;
+        &:before {
+            content: "Lets Get Married!";
+            position: absolute;
+            font-family: "kandaniregular";
+            // top: 0;
+            // left: 0;
+            color: $magenta;
+        }
     }
 
     .masthead-pad-top {
@@ -52,7 +61,7 @@ header.masthead {
         }
 
         .masthead-heading {
-            font-size: 4.5rem;
+            font-size: 6rem;
             font-weight: 700;
             line-height: 4.5rem;
             margin-bottom: 4rem;

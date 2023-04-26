@@ -49,13 +49,53 @@ html(lang='en')
                         li.nav-item
                             a.nav-link(href='rsvp.html') RSVP
 
-        // Timeline
-        section#timeline.page-section
+        // Our Story
+        section#our-story.page-section
             .container.extra-margin
                 .text-center
                     h2.section-heading Our Story
                     h3.section-subheading.text-muted  
                     //- h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+
+            .container.m5
+                .row
+                    .col-md-3
+                    .col-md-2.col-5
+                        img(src='assets/img/engagement.jpg').img-fluid
+                    .col-md-4.col-7
+                        span.lead.align-middle Text about us. Our relationship, how we met, etc etc. Everybody will love it. More text here.
+                    .col-md-3
+
+
+
+
+
+            .container.mt-5
+                #carousel-slideshow.carousel.slide(data-ride="carousel")
+                    .carousel-inner
+                        .carousel-item.active
+                            img(src="assets/img/slideshow-1.jpg" alt="...").d-block.w-100
+                        //- .carousel-item
+                        //-     img(src="assets/img/slideshow-2.jpg" alt="...").d-block.w-100
+                        .carousel-item
+                            img(src="assets/img/slideshow-3.jpg" alt="...").d-block.w-100
+                        .carousel-item
+                            img(src="assets/img/slideshow-4.jpg" alt="...").d-block.w-100
+                        .carousel-item
+                            img(src="assets/img/slideshow-5.jpg" alt="...").d-block.w-100
+                        .carousel-item
+                            img(src="assets/img/slideshow-6.jpg" alt="...").d-block.w-100
+                        .carousel-item
+                            img(src="assets/img/slideshow-7.jpg" alt="...").d-block.w-100
+                        .carousel-item
+                            img(src="assets/img/slideshow-8.jpg" alt="...").d-block.w-100
+                
+                    button.carousel-control-prev(data-bs-target="#carousel-slideshow" role="button" data-bs-slide="prev")
+                        span.carousel-control-prev-icon(aria-hidden="true")
+                        span.sr-only Previous
+                    button.carousel-control-next(data-bs-target="#carousel-slideshow" role="button" data-bs-slide="next")
+                        span.carousel-control-next-icon(aria-hidden="true")
+                        span.sr-only Next
                 
         // Footer
         include includes/footer

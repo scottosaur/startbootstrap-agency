@@ -37,7 +37,8 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-agency.git"
     },
     "dependencies": {
-        "bootstrap": "5.2.3"
+        "bootstrap": "5.2.3",
+        "bs5-lightbox": "^1.8.3"
     },
     "devDependencies": {
         "autoprefixer": "10.4.14",

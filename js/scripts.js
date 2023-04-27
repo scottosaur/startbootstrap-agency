@@ -7,6 +7,8 @@
 // Scripts
 // 
 
+// import Lightbox from 'bs5-lightbox';
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function

@@ -11042,6 +11042,8 @@ header.masthead {
 }
 header.masthead.masthead-rsvp {
   background-image: url("../assets/img/rsvp-img.jpg");
+  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -11059,6 +11061,9 @@ header.masthead .masthead-heading {
   font-family: "semplicitapro";
   color: white;
   text-shadow: 0px 0px 10px black;
+}
+header.masthead .masthead-margin-top {
+  margin-top: 15rem;
 }
 header.masthead .masthead-pad-top {
   padding-top: 18rem;

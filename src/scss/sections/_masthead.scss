@@ -15,6 +15,8 @@ header.masthead {
 
     &.masthead-rsvp {
         background-image: url("../assets/img/rsvp-img.jpg");
+        padding-bottom: 4rem;
+        padding-bottom: 2rem;
     }
 
     .masthead-subheading {
@@ -42,6 +44,11 @@ header.masthead {
         //     // left: 0;
         //     color: $magenta;
         // }
+    }
+
+    .masthead-margin-top {
+        margin-top: 15rem;
+        // padding-bottom: 0rem;
     }
 
     .masthead-pad-top {
